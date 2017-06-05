@@ -1,0 +1,619 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Primera Aplicacion</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app9.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/mayo8.jpg','imagenes/atlixco4.png','imagenes/balnerio1.jpg','imagenes/atlixco12.jpg','imagenes/atlixco10.jpg','imagenes/atlixco8.jpg','imagenes/atlixco17.jpg','imagenes/cerrito.jpg')">
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regrsar" data-back-btn-theme="b">
+<h1>ATLIXCO PUEBLO MAGICO</h1>
+</div>
+<div data-role="main" class="ui-content">
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/atlixco1.jpg" alt="atlixco1" title="atlixco1" id="wows1_0"/></li>
+		<li><img src="data1/images/atlixco16.jpg" alt="atlixco16" title="atlixco16" id="wows1_1"/></li>
+		<li><img src="data1/images/atlixco5.jpg" alt="atlixco5" title="atlixco5" id="wows1_2"/></li>
+		<li><img src="data1/images/atlixco18.png" alt="atlixco18" title="atlixco18" id="wows1_3"/></li>
+		<li><img src="data1/images/atlixco19.png" alt="atlixco19" title="atlixco19" id="wows1_4"/></li>
+		<li><img src="data1/images/atlixco10.jpg" alt="atlixco10" title="atlixco10" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/atlixco2.jpg" alt="wowslider.com" title="atlixco2" id="wows1_6"/></a></li>
+		<li><img src="data1/images/atlixco14.jpg" alt="atlixco14" title="atlixco14" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="atlixco1"><span><img src="data1/tooltips/atlixco1.jpg" alt="atlixco1"/>1</span></a>
+		<a href="#" title="atlixco16"><span><img src="data1/tooltips/atlixco16.jpg" alt="atlixco16"/>2</span></a>
+		<a href="#" title="atlixco5"><span><img src="data1/tooltips/atlixco5.jpg" alt="atlixco5"/>3</span></a>
+		<a href="#" title="atlixco18"><span><img src="data1/tooltips/atlixco18.png" alt="atlixco18"/>4</span></a>
+		<a href="#" title="atlixco19"><span><img src="data1/tooltips/atlixco19.png" alt="atlixco19"/>5</span></a>
+		<a href="#" title="atlixco10"><span><img src="data1/tooltips/atlixco10.jpg" alt="atlixco10"/>6</span></a>
+		<a href="#" title="atlixco2"><span><img src="data1/tooltips/atlixco2.jpg" alt="atlixco2"/>7</span></a>
+		<a href="#" title="atlixco14"><span><img src="data1/tooltips/atlixco14.jpg" alt="atlixco14"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<div data-role="collapsible" data-content-theme="false">
+</div>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>ATLIXCO DE LAS FLORES</h2>
+ <p>Se muestra la informacion de Atlixco de las Flores</p>
+ </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CERRITO DE SAN MIGUEL</h2>
+ <p>Se muestra  informacion del atlixcayotl del cerrito de San Miguel</p>
+ </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>UBICACION DE ATLIXCO</h2>
+<p>Se muestra informacion de la ubicacion de Atlixco</p>
+ </a>
+ </li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>VILLA ILUMINADA DE ATLIXCO</h2>
+<p>Se muestra informacion de la Villa Iluminada de Atlixco </p>
+ </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>BALNERIO LA AYOA DE ATLIXCO</h2>
+ <p>Se muestra informacion del Balnerio Ayoa</p>
+ </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>MONUMENTOS DE ATLIXCO</h2>
+  <p> Se mestran monumentos de Atlixco</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> RESTAURANTES DE ATLIXCO</h2>
+  <p> Se muestran los mejores restaurantes de atlixco</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>VIVEROS DE CABRERA</h2>
+  <p>Se muestra las mejores vistas de atlixco</p>
+  </a>
+  </li>
+  </ul>
+  </div>
+          <center>
+         <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Foto</h1>
+<div>
+<br>
+</div>
+<div>
+<p>Centro de Bachillerato Tecnologico Industrial y de Servicios</p>
+<p>Maria Victoria Perez Alvarez</p>
+<p>4"H"</p> 
+<img src="imagenes/perfil.JPG" width="361" height="361"></div>
+</div>
+</div>
+<div>
+</center>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+  <div>
+  <img src="res/android/mdpi.png" width="207" height="109">
+  </div>
+  <div>
+  <h4>Guia Turistica</h4>
+  <h4>Maria Victoria Perez Alvarez </h4>
+  </div>
+  </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>ATLIXCO DE LAS FLORES</h1>
+  
+  </div>
+  <div data-role="content" align="center">
+<div>
+  <h4><strong>ATLIXCO DE LAS FLORES </strong><br>
+    Atlixco es un productor agrícola altamente reconocido a nivel nacional e internacional por su gran variedad y calidad de árboles ornamentales y frutales así como de plantas y flores para huerto o decoración. Es visita obligada el recorrido por la zona de viveros en donde encontrarás un paraíso lleno de color y aroma para deleitar a visitantes y residentes.</h4>
+  <p>Una vuelta por el zócalo es una experiencia inolvidable, saboreando los ricos helados y sorbetes que venden cerca de allí, así mismo entrar a algún restaurante para degustar la cecina atlixquense, el guacamole, el consomé Atlixquense, o las truchas en sus diferentes modalidades.</p>
+  <p>&nbsp;</p>
+  <center>
+  <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Foto</h1>
+<div>
+<br>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/atlixco4.png',1)"><img src="imagenes/atlixco2.jpg" width="640" height="400" id="Image21"></a> 
+   </div>
+   </div>
+   </center>
+        <center>
+         <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Foto</h1>
+<div>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image43','','imagenes/atlixco17.jpg',1)"><img src="imagenes/atlixco3.png" width="600" height="400" id="Image43"></a></div>
+</div>
+</div>
+<div>
+</center>
+</center>
+ <div data-role="main" class="ui-content" align="center">
+  <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://atlixco.gob.mx/" data-role="button" id="beep">
+  <h4>Atlixco</h4>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  </center>
+   </div>
+   </div>
+   
+<div data-role="footer" data-theme="b" data-position="fixed">
+
+       <h4>Guia Turistica</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>CERRITO DE SAN MIGUEL <strong>"Huey Atlixcayotl"</strong></h1>
+</div>
+<div data-role="content" align="center">
+  <div>
+  <table width="920" border="0" align="right" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td height="86" colspan="2" align="center" valign="top"><div align="justify">
+        <center>
+<p>Cada año en el mes de septiembre el municipio muestra lo mejor de su producción a través de su feria regional, y la magia de sus danzas, a través del <strong>"Huey Atlixcayotl"</strong>, la belleza de sus flores, la variada gastronomía de la región y todo lo que un municipio dinámico y progresista ofrece para el desarrollo de su estado y su país.</p>
+          Si tienes ánimo aventurero te invitamos a subir al Cerro de San Miguel para que eches un vistazo de la ciudad desde sus miradores y si todavía te quedan un poco de fuerzas, que subas la escalinata hasta la hermita dedicada al Arcángel San Miguel, que cuenta la historia, encerró al diablito que hacía de las suyas en los solares dentro del pozo que se encuentra ahí.</p>
+          </center>
+          <p>&nbsp;</p>
+        </div></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>&nbsp;</h4>
+  <p>&nbsp;</p>
+  
+ <center>
+    <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Foto</h1>
+<div>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','imagenes/atlixco10.jpg',1)"><img src="imagenes/atlixco9.jpg" width="300" height="300" id="Image42"></a></div>
+</div>
+</div>
+</center>  
+     <center>
+         <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Foto</h1>
+<div>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','imagenes/cerrito.jpg',1)"><img src="imagenes/cerrito1.jpg" width="259" height="194" id="Image44"></a></div>
+</div>
+</div>
+<div>
+</center>
+ <div data-role="main" class="ui-content" align="center">
+  <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.sexenio.com.mx/puebla/articulo.php?id=55443" data-role="button" id="beep">
+  <h4>Cerrito de San Miguel</h4>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  </center>
+</div>
+  </div>
+
+  <div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Guia Turistica</h4>
+  </div>
+</div>
+  
+  
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>UBICACION DE ATLIXCO</h1>
+   </div>
+  <div data-role="content" aling="center">
+    <div>
+       <p>
+       <table width="829" border="0" cellpadding="0" cellspacing="0">
+         <tbody>
+           <tr>
+             <td width="829" height="236"><div align="justify">Se ubica a 30 km de la ciudad de Puebla, capital del Estado y cuenta con dos importantes vías de acceso: la Carretera Federal 190 y la Autopista Vía Atlixcáyotl.<br>
+               <br>
+               Actualmente, es una moderna ciudad con más de cien mil habitantes, que ha logrado armonizar su desarrollo urbano con el majestuoso legado de arquitectura colonial que dejaron sus fundadores (1579), y que hoy es uno de los principales atractivos turísticos de este municipio.<br>
+               <br>
+               Recibió su título de «Heroica» debido a la Batalla del 4 de mayo de 1862 que precedería a la Batalla de Puebla del 5 de mayo de 1862. Es conocido por su buen clima y la gran actividad florística, comercial y turística que le valieron haber sido llamada Atlixco de las Flores y Granero de la Nueva España, durante la época colonial. </div></td>
+           </tr>
+         </tbody>
+       </table>
+       <h4>
+         </p>
+       </h4>
+       <center>
+        <center>
+         <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Foto</h1>
+<div>
+<br>
+</div>
+         <img src="imagenes/mapagif.gif" width="640" height="480" id="Image22">
+       </center>
+         <div data-role="main" class="ui-content">         </div>
+     </center>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content" align="center">
+  <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.archdaily.mx/mx/02-217021/monumento-emblematico-del-150-aniversario-de-la-batalla-de-puebla-ten-arquitectos" data-role="button" id="beep">
+  <h4>Ubicacion</h4>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Guia Turistica</h4>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+
+<h4>VILLA ILUMINADA DE ATLIXCO</h4>
+</div>
+<div data-role="content" aling="center">
+      <div>
+        <p>Cada año cambia la temática de las figuras que <strong>iluminarán</strong> <strong>Atlixco</strong>. El año pasado fue de juguetes, y en este estarás caminando mientras cerca de 1000 luces y figuras de tambores y campanas, el árbol de Navidad –que tiene una altura de 25 metros– y los renos gigantes, te dan la bienvenida.</p>
+         <h4>&nbsp;</h4><h4>&nbsp;</h4>
+         </p>
+         <center>
+         <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Foto</h1>
+<div>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','imagenes/atlixco8.jpg',1)"><img src="imagenes/atlixco6.jpg" width="480" height="360" id="Image"></a></div>
+</div>
+</div>
+<div>
+</center>
+     </div>
+     </div>
+     <div data-role="main" class="ui-content" align="center">
+  <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://puebla.travel/es/museos/item/museo-interactivo-de-la-batalla-del-5-de-mayo" data-role="button" id="beep">
+  <h4>Villa Iluminada</h4>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  <div data-role="main" class="ui-content" align="center">
+  <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.3museos.com/es/coleccion/mexico-antiguo/" data-role="button" id="beep">
+  <h4>mas sobre la villa iluminada</h4>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+   <div data-role="footer" data-them="b" data-position="fixed">
+         <h4>Guia Turistica</h4>
+  </div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <center>
+          <h1>BALNEARIO AYOA DE ATLIXCO</h1></center>
+</div>
+<div data-role="content" aling="center">
+       <div>
+       <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/balneario7.jpg" alt="balneario7" title="balneario7" id="wows2_0"/></li>
+		<li><img src="data2/images/balneario.jpg" alt="balneario" title="balneario" id="wows2_1"/></li>
+		<li><img src="data2/images/balneario2.jpg" alt="balneario2" title="balneario2" id="wows2_2"/></li>
+		<li><img src="data2/images/balneario3.jpg" alt="balneario3" title="balneario3" id="wows2_3"/></li>
+		<li><img src="data2/images/balneario4.jpg" alt="balneario4" title="balneario4" id="wows2_4"/></li>
+		<li><img src="data2/images/balneario5.jpg" alt="balneario5" title="balneario5" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/balneario6.jpg" alt="wow slider" title="balneario6" id="wows2_6"/></a></li>
+		<li><img src="data2/images/balnerio1.jpg" alt="balnerio1" title="balnerio1" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="balneario7"><span><img src="data2/tooltips/balneario7.jpg" alt="balneario7"/>1</span></a>
+		<a href="#" title="balneario"><span><img src="data2/tooltips/balneario.jpg" alt="balneario"/>2</span></a>
+		<a href="#" title="balneario2"><span><img src="data2/tooltips/balneario2.jpg" alt="balneario2"/>3</span></a>
+		<a href="#" title="balneario3"><span><img src="data2/tooltips/balneario3.jpg" alt="balneario3"/>4</span></a>
+		<a href="#" title="balneario4"><span><img src="data2/tooltips/balneario4.jpg" alt="balneario4"/>5</span></a>
+		<a href="#" title="balneario5"><span><img src="data2/tooltips/balneario5.jpg" alt="balneario5"/>6</span></a>
+		<a href="#" title="balneario6"><span><img src="data2/tooltips/balneario6.jpg" alt="balneario6"/>7</span></a>
+		<a href="#" title="balnerio1"><span><img src="data2/tooltips/balnerio1.jpg" alt="balnerio1"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+         <div data-role="content" align="center">
+           <div>
+             <h2>¡Ven a divertirte al Parque Ayoa!</h2>
+             <p>Ubicado en la bella Ciudad de Puebla, el Parque Acuático Ayoa nos brinda magníficas opciones para la diversión.</p>
+             <p>Ayoa, su nombre proviene de origen náhuatl y significa "Jugar el agua con las manos", y es un balneario en el cuál podrás ver, convivir, oler la naturaleza.</p>
+             <h2>Servicios del Parque Acuático Ayoa:</h2>
+             <p>Albercas.&nbsp;Ven y date un chapuzón en las albercas  familiares, y por supuesto diviértete.<br>
+               Chapoteaderos.&nbsp;Diversión y seguridad garantizada  para los más pequeños, ya que mientras ellos juegan tu puedes descansar en las  palapas.<br>
+               Cancha de fútbo.&nbsp;Arma tu equipo y juega una  traficional cascarita.<br>
+               Cancha de basquetbol.&nbsp;Ven a jugar con la familia y a  disfrutar un poco del deporte.<br>
+               Áreas verdes.&nbsp;Descansa y relájate, haz a un lado el  estrés y disfruta el paisaje.<br>
+               Área para acampar.&nbsp;Pasa una noche inolvidable  escuchando solo el canto de los grillos y admirando las estrellas.<br>
+               Restaurant.&nbsp;Prueba los deliciosos platillos típicos  de la región.<br>
+               Área de asadores.&nbsp;O si lo prefieres prepara tu mismo  tus alimentos en los asadores que aqui se ofrecen.<br>
+             Como puedes ver es un Parque muy completo que nos ofrece  diversión para toda la familia.</p>
+<h2>Otros Servicios del Parque Acuático Ayoa:</h2>
+             <ul>
+               <li>Albercas</li>
+               <li>Chapoteadero</li>
+               <li>Canchas Deportivas</li>
+               <li>Áreas Verdes</li>
+               <li>Restaurant</li>
+               <li>Asadores</li>
+               <li>Palapas</li>
+               <li>Área para acampar</li>
+               <li>Sanitarios</li>
+               <li>Regaderas</li>
+               <li>Estacionamiento           </li>
+             </ul>
+           </div>
+         </div>
+       <center>
+  <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Foto  </h1>
+<div>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/balnerio1.jpg',1)"><img src="imagenes/balneario.jpg" width="259" height="194" id="Image25"></a></div>
+</div>
+</div>
+</center>
+  </div>
+  </div>
+     <div data-role="main" class="ui-content" align="center">
+  <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.puebla.travel/es/ver-hacer/espacios-de-ocio/item/parque-acuatico-ayoa" data-role="button" id="beep">
+  <h4>Balneario</h4>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Guia Turistica</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>MONUMENTOS DE ATLIXCO</h1>
+   </div>
+  <div data-role="content" aling="center">
+    <div>
+       <p>
+       <table width="829" border="0" cellpadding="0" cellspacing="0">
+         <tbody>
+           <tr>
+             <td width="829" height="236"><div align="justify">
+               <p>Atlixco está caracterizado por ser una zona con un gran número de monumentos históricos, lo que ayuda en gran medida a obtén la pasada denominación de Pueblo Mágico.</p>
+               <p>Cabe señalar que dicho diplomado solo se imparte a quienes cuentan con la denominación de Pueblo Mágico.</p>
+               <p>El regidor enfatizo que no hay pérdidas de monumentos históricos en Atlixco, lo que si es preocupante es el abandono y deterioro en algunas casas o casonas esto por el nulo mantenimiento que los dueños le dan.</p>
+               <p>&ldquo;hay un abandono por parte de los dueños, hay las políticas del INAH eso ha dejado en el olvido muchos inmuebles, no tenemos el dato exacto pero si hay abandono, y que en esta época de lluvias si es un riesgo para la ciudadana&rdquo; Regidor Turismo Cultura y Tradiciones Erich Amigon</p>
+               <p>Los monumentos históricos más antiguos datan del siglo XVII a principios del siglo XX, la época de oro del barroco y clásico, hay algunos edificios que tienen rasgos afrancesados en su arquitectura.</p>
+             </div></td>
+           </tr>
+         </tbody>
+       </table>
+       <h4>
+         </p>
+       </h4>
+       <center>
+        <center>
+         <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Foto</h1>
+<div>
+<br>
+</div>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/atlixco12.jpg',1)"><img src="imagenes/atlixco13.jpg" width="640" height="426" id="Image26"></a>
+       </center>
+         <div data-role="main" class="ui-content">         </div>
+     </center>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content" align="center">
+  <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://www.elinformativo.mx/atlixco/item/154-atlixco-cuenta-con-200-monumentos-historicos-entre-las-que-se-destacan-las-casonas-en-total-abandono" data-role="button" id="beep">
+  <h4>Monumentos de Atlixco</h4>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Guia Turistica</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> RESTAURANTES DE ATLIXCO</h1>
+   </div>
+  <div data-role="content" aling="center">
+    <div>
+       <p>
+       <h4>
+         </p>
+       </h4>
+       <table width="829" border="0" cellpadding="0" cellspacing="0">
+         <tbody>
+           <tr>
+             <td width="829" height="236">Los restaurantes mas visitados puedes encontrarlos dandaole clic  abajo.</td>
+           </tr>
+         </tbody>
+       </table>
+       <center>
+         <img src="imagenes/atlixco11.jpg" width="640" height="480" id="Image22">
+       </center>
+         <div data-role="main" class="ui-content">         </div>
+     </center>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content" align="center">
+  <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://turismoatlixco.com/restaurantes/" id="beep">
+  <h4>Restaurantes</h4>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Guia Turistica</h4>
+  </div>
+</div>
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>VIVEROS DE CABRERA</h1>
+   </div>
+  <div data-role="content" aling="center">
+    <div>
+       <p>
+       <table width="829" border="0" cellpadding="0" cellspacing="0">
+         <tbody>
+           <tr>
+             <td width="829" height="236"><div align="justify">
+               <p>Uno de los muchos atractivos turísticos que ofrece el municipio de Atlixco son los viveros de la colonia cabrera, mismos que se han encargado de preservar el nombre de &ldquo;Atlixco de las Flores&rdquo; esto por la producción de más de 120 mil plantas que se tiene.</p>
+               <p>Son más de 100 los viveros que se encuentran en toda esta colonia que gracias al turista, así como a los amantes de las flores día con día se va posicionando en el mercado como lugar favorito para llevarse un recuerdo viviente de este Pueblo Mágico.</p>
+               <p>Quienes llegan por primera vez a Atlixco, no dudan en visitar los viveros mismos que guardan celosamente las miles y miles de variedades que ahí se producen y por mencionar algunas están los Ciprés, Clavellina, Crisantemo, Violeta persa, Gazania, Geranio, Azucena, Palo Brasil, Petunia, Rosas, Pensamiento, arrayán, dedo de niño, jacarandá, jazmín, margarita, mora, mosaico, lengua de pájaro, mariana y la lista es interminables, solo basta llegar a uno de estos viveros y preguntar por su planta favorita y sin duda alguna le mostraran las variedad que en estos viveros se producen.</p>
+               <p>La temporada influye mucho en cuanto a las ventas, un claro ejemplo es en noviembre y diciembre donde lo fuerte es la noche buena, misma que se comienza a producir en este mes de marzo para que se encuentre en su máximo esplendor a finales de cada año.</p>
+               <p>&ldquo;yo amo las flores, la verdad es que estoy enamorada de ellas, yo soy de San Luis Potosí y venimos viajando por que nos dijeron que aquí se dan las mejores flores de todo México y estoy comprobando que así es&rdquo; .</p>
+               <p>Cada fin de semana se puede ver a cientos y cientos de turistas visitando los viveros de cabrera, así como las carretillas llenas de flores que tiene como destino la cajuela de un automóvil que las llevara a darle vida a un hogar fuera de este municipio.</p>
+               <p>En temporada de vacaciones se puede ver el doble si no es que el tripe de visitantes que se quedan admirados ante la belleza que cada una de ellas tiene sin dejar de lado el olor de algunas que enamora.</p>
+             </div></td>
+           </tr>
+         </tbody>
+       </table>
+       <h4>
+         </p>
+       </h4>
+       <center>
+         <img src="imagenes/vivero.jpg" width="640" height="480" id="Image22">
+       </center>
+         <div data-role="main" class="ui-content">         </div>
+     </center>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content" align="center">
+  <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://ediciones.diariopuntual.com/centro/2016/03/23/16919">
+  <h4>Viveros de Atlixco</h4>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Guia Turistica</h4>
+  </div>
+</div>
+</body>
+</html>
